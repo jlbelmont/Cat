@@ -1,0 +1,12 @@
+name: cat
+channels:
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - pandas
+  - pip
+  - python=3.9
+  - scikit-learn
+  - sympy
+prefix: /Users/jbelmont/anaconda3/envs/cat
