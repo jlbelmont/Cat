@@ -2,11 +2,11 @@
 # IMPORTS #
 ###########
 
-from CONFIG import (
-    config_imports,
+from bot2.CONFIG import (
     config_vars
 )
 
+from bot2.CONFIG import config_imports
 import alpaca.alpaca_acct, data.scraper, hist.hist_anal, hmm.hmm, llms.gpt_llm, llms.hf_llm, nlp.nlp, vis.vis
 
 ##########

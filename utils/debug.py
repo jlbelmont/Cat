@@ -1,6 +1,6 @@
 import logging
 from bot.utils.save import *
-from CONFIG import * 
+from CONFIG_SHELL import * 
 import os 
 import psutil
 import time
