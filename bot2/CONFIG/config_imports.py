@@ -10,6 +10,7 @@ from flask import Flask, render_template, request, jsonify
 
 import plotly.graph_objs as go
 import pandas as pd
+import matplotlib.pyplot as plt
 
 ##########
 # FINANCE #
@@ -24,10 +25,10 @@ import requests
 
 import os
 import sys
-import datetime
+from datetime import datetime, timedelta
+import time
 import math
 import logging
-import datetime
 from dotenv import load_dotenv
 
 ##########
@@ -56,3 +57,35 @@ from alpaca.trading.requests import (
 from alpaca.data import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
+
+
+import yfinance as yf
+import pandas as pd
+import numpy as np
+from hmmlearn import hmm
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.decomposition import TruncatedSVD
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from datetime import datetime, timedelta
+import openai  # ChatGPT API (openai-python library)
+import os
+
+################
+# PROGRESS BAR #
+################
+
+from tqdm import tqdm 
+
+################
+# ML AND STATS #
+################
+
+import statsmodels.api as sm
+from hmmlearn import hmm
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.decomposition import TruncatedSVD
+from sklearn.pipeline import make_pipeline
+from scipy.optimize import minimize

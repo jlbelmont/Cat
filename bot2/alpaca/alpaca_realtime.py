@@ -15,6 +15,10 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.
 from bot2.CONFIG.config_imports import *
 from bot2.CONFIG.config_vars import * 
 
+#########
+# FUNCS #
+#########
+
 def scrape_rt_data(symbols, start_time, end_time):
     """
     Scrapes real-time data for the specified symbols within the given time frame.
@@ -139,3 +143,4 @@ def get_most_recent_stock_value_alpaca(symbol):
     except Exception as e:
         print(f"Error fetching most recent stock value: {e}")
         return None
+

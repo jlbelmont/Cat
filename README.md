@@ -6,4 +6,4 @@
 2. `config_vars.py`
 3. `alpaca_realtime.py`
 4. `alpaca_acct.py`
-5. idk yet :/
+5. `trading.py`
