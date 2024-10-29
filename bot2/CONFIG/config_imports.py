@@ -1,27 +1,27 @@
-###########
+#########
 # FLASK #
-###########
+#########
 
 from flask import Flask, render_template, request, jsonify
 
-###########
+############
 # PLOTTING #
-###########
+############
 
 import plotly.graph_objs as go
 import pandas as pd
 import matplotlib.pyplot as plt
 
-##########
+###########
 # FINANCE #
-##########
+###########
 
 import yfinance as yf
 import requests
 
-###########
+#############
 # UTILITIES #
-###########
+#############
 
 import os
 import sys
@@ -29,6 +29,7 @@ from datetime import datetime, timedelta
 import time
 import math
 import logging
+import asyncio
 from dotenv import load_dotenv
 
 ##########
@@ -57,12 +58,17 @@ from alpaca.trading.requests import (
 from alpaca.data import StockHistoricalDataClient
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
+import alpaca_trade_api as tradeapi
+from alpaca.trading.stream import TradingStream
+# from alpaca.data.stream import StockDataStream
+from alpaca.data.models import Trade
 
 
 import yfinance as yf
 import pandas as pd
 import numpy as np
 from hmmlearn import hmm
+from hmmlearn.hmm import GaussianHMM
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import TruncatedSVD
